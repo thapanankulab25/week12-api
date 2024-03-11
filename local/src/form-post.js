@@ -9,7 +9,7 @@ export default function FormPost() {
     const formData = new FormData(form.current);
     const formEnt = Object.fromEntries(formData.entries());
 
-    fetch('/api/form-post', {
+    fetch('https://week12-api.onrender.com/api/form-post', {
       method: 'POST',
       body: JSON.stringify(formEnt),
       headers: {'Content-Type':'application/json'}

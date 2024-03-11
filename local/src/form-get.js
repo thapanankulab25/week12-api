@@ -6,7 +6,7 @@ const onSubmitForm = (event) => {
 event.preventDefault()
 const formData = new FormData(form.current)
 let params = new URLSearchParams(formData) //.toString()
-let URL = '/api/form-get?' + params
+let URL = 'https://week12-api.onrender.com/api/form-get?' + params
 fetch(URL)
 .then(response => response.json())
 .then(result => {

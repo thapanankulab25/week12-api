@@ -12,7 +12,7 @@ setServerTime(r)
 .catch(err => alert(err))
 }
 const onClickFootballResult = () => {
-    fetch('/api/football-result')
+    fetch('https://week12-api.onrender.com/api/football-result')
     .then(response => response.text())
     .then(result => setFootballResult(result))
     .catch(err => alert(err))
